@@ -13,7 +13,7 @@ const {CloudinaryConnect}=require("./config/Cloudinary")
 const fileUpload=require("express-fileupload")
 app.use(cors({
     // origin:"http://localhost:3000",
-    origin:"https://expresschatpro.netlify.app/",
+    origin:"*",
     credentials:true,
     optionSuccessStatus:200,
 }))
