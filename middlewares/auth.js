@@ -2,7 +2,7 @@
 const jwt=require("jsonwebtoken")
 exports.auth=async (req,res,next)=>{
 try{
-           
+           console.log("req .body mei kya hai ",req.body);
     console.log("req.body toekn ",req.body.token);
     console.log("req.cookies.token ",req.cookies.token);
     // console.log("header se",req.header("Authorization").replace("Bearer ",""))
