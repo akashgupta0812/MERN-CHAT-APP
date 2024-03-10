@@ -50,7 +50,7 @@ exports.auth = async (req, res, next) => {
            console.log("token 50",token);
            console.log("req. header  ",req.header("Authorization"));
            console.log("req ki token ",req.body.token);
-           console.log("req .cookies ",reqreq.cookie.token)
+           console.log("req .cookies ",req.cookie.token)
         if (!token) {
             token = req.body.token || req.cookie.token;
         
