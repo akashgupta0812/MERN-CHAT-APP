@@ -265,8 +265,8 @@ exports.CreateGroupChat=async(req,res)=>{
     try{
         
 const {users,chatname}=req.body;
-console.log("req body ",req.body);
-console.log("users ",users);
+// console.log("req body ",req.body);
+// console.log("users ",users);
 if(users.length<2  || !chatname)
 {
     return res.json(
