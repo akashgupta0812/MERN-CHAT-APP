@@ -263,7 +263,9 @@ return res.status(401).json(
 }
 exports.CreateGroupChat=async(req,res)=>{
     try{
+        
 const {users,chatname}=req.body;
+console.log("req body ",req.body);
 console.log("users ",users);
 if(users.length<2  || !chatname)
 {
