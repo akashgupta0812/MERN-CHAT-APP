@@ -47,9 +47,13 @@ const jwt = require("jsonwebtoken");
 exports.auth = async (req, res, next) => {
     try {
         let token = req.header("Authorization");
-
+           console.log("token 50",token);
+           console.log("req. header  ",req.header("Authorization"));
+           console.log("req ki token ",req.body.token);
+           console.log("req .cookies ",reqreq.cookie.token)
         if (!token) {
-            token = req.body.token || req.cookies.token;
+            token = req.body.token || req.cookie.token;
+        
         } else {
             token = token.replace("Bearer ", "");
         }
